@@ -1,0 +1,39 @@
+
+@baseUrl = http://localhost:5000/api
+
+POST {{baseUrl}}/products
+Content-Type: application/json
+
+{
+    "name": "Smart watch",
+    "image": "exampel.com/image",
+    "price": "199.99"
+}
+
+###
+
+GET {{baseUrl}}/products
+Content-Type: application/json
+
+
+###
+
+GET {{baseUrl}}/products/67e89c41759ecbe1a4e88c29
+Content-Type: application/json
+
+###
+PUT {{baseUrl}}/products/67e89c41759ecbe1a4e88c29
+Content-Type: application/json
+
+{
+    "_id": "67e89c41759ecbe1a4e88c29",
+    "name": "Apple watch",
+    "image": "exampel.com/image",
+    "price": 1199.99,
+    "createdAt": "2025-03-30T01:20:01.097Z",
+    "updatedAt": "2025-03-30T01:20:01.097Z"
+}
+
+### 
+DELETE {{baseUrl}}/products/67e89c41759ecbe1a4e88c29
+Content-Type: application/json
