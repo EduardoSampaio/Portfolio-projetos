@@ -75,4 +75,4 @@ product-store/
 ├── README.md
 ```
 
-![Project](./image.png)
+![Project](images/product-store.png)
